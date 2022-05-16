@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <main>
+      <div class="popup-container hide" id="popup-container">
+        <div class="popup-content">
+          <div class="header">
+            <h2>Results</h2>
+            <h2 id="x">X</h2>
+          </div>
+          <div class="body">
+            <h3 class="popup-text">
+              <span id="corrAnswers"></span>/10 Correct Answers :)
+            </h3>
+          </div>
+        </div>
+      </div>
+      <section class="quiz_container">
+        <div class="top_group">
+          <small id="question_category" class="small">Question Number</small>
+          <h2 id="question">Question</h2>
+        </div>
+        <div class="bottom_group">
+          <small class="small" id="small">Difficulty Options</small>
+          <div class="inputs">
+            <input id="o1" type="radio" name="answer" value="a" required />
+            <label for="o1" class="o1">Option 1 </label>
+            <input id="o2" type="radio" name="answer" value="b" required />
+            <label for="o2" class="clicked o2">Option 2 </label>
+            <input id="o3" type="radio" name="answer" value="c  " required />
+            <label for="o3" class="o3">Option 3 </label>
+          </div>
+        </div>
+      </section>
+      <div class="btn_container">
+        <button class="btn" id="btn">Submit</button>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
